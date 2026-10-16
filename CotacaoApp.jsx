@@ -94,11 +94,11 @@ export default function CotacaoApp() {
     setItens(itens.filter(i => i.id !== id));
   };
 
-  const toggleAprovador = (index) => {
-    const novos = [...aprovadores];
-    novos[index].aprovado = !novos[index].aprovado;
-    setAprovadores(novos);
-  };
+//   const toggleAprovador = (index) => {
+//     const novos = [...aprovadores];
+//     novos[index].aprovado = !novos[index].aprovado;
+//     setAprovadores(novos);
+//   };
 
   // Cálculos Financeiros
   const calcularTotalFornecedor = (fornIndex) => {
@@ -504,7 +504,7 @@ export default function CotacaoApp() {
             </div>
 
             {/* Configuração dos Vistos / Aprovadores */}
-            <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-4 space-y-2">
+            {/* <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-4 space-y-2">
               <div className="flex items-center gap-2 pb-2 border-b border-slate-100 text-emerald-800 font-bold text-sm">
                 <UserCheck className="w-4 h-4" /> Vistos e Aprovadores
               </div>
@@ -522,7 +522,7 @@ export default function CotacaoApp() {
                   </button>
                 ))}
               </div>
-            </div>
+            </div> */}
 
           </section>
         )}
@@ -617,10 +617,10 @@ export default function CotacaoApp() {
                     </td>
                     {fornecedores.map((f, idx) => (
                       <td key={idx} colSpan={3} className="border border-slate-400 p-1 leading-tight">
-                        <div><strong>CONDI. PAGTO:</strong> {f.condPagto || '—'}</div>
-                        <div><strong>P.ENTREGA:</strong> {f.pEntrega || '—'} | <strong>CIDADE:</strong> {f.cidade || '—'}</div>
-                        <div><strong>FONE:</strong> {f.fone || '—'} | <strong>CONTATO:</strong> {f.contato || '—'}</div>
-                        <div><strong>DESPACHO:</strong> {f.despacho || '—'}</div>
+                        <div><br><strong>CONDI. PAGTO:</strong> {f.condPagto || '—'}</br></div>
+                        <div><br><strong>P.ENTREGA:</strong> {f.pEntrega || '—'} | <strong>CIDADE:</strong> {f.cidade || '—'}</br></div>
+                        <div><br><strong>FONE:</strong> {f.fone || '—'} | <strong>CONTATO:</strong> {f.contato || '—'}</br></div>
+                        <div><br><strong>DESPACHO:</strong> {f.despacho || '—'}</br></div>
                       </td>
                     ))}
                   </tr>
@@ -732,13 +732,13 @@ export default function CotacaoApp() {
                       </div>
 
                       <div className="mt-3 pt-2 border-t border-slate-200">
-                        {ap.aprovado ? (
+                        {/* {ap.aprovado ? (
                           <span className="font-bold text-emerald-700 bg-emerald-50 px-1 py-0.5 rounded text-[8px] border border-emerald-200">
                             ✓ VISTADO
                           </span>
                         ) : (
-                          <span className="text-slate-300 italic text-[8px]">Aguardando</span>
-                        )}
+                          <span className="text-slate-300 italic text-[8px]"></span>
+                        )} */}
                       </div>
                     </div>
                   ))}
