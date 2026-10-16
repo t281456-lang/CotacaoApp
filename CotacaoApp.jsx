@@ -809,26 +809,26 @@ export default function CotacaoApp() {
                         className="border border-slate-400 p-1 leading-tight"
                       >
                         <div>
-                          <br>
+                          
                             <strong>CONDI. PAGTO:</strong> {f.condPagto || "—"}
-                          </br>
+                          
                         </div>
                         <div>
-                          <br>
+                          
                             <strong>P.ENTREGA:</strong> {f.pEntrega || "—"} |
                             <strong>CIDADE:</strong> {f.cidade || "—"}
-                          </br>
+                          
                         </div>
                         <div>
-                          <br>
+                          
                             <strong>FONE:</strong> {f.fone || "—"} |
                             <strong>CONTATO:</strong> {f.contato || "—"}
-                          </br>
+                          
                         </div>
                         <div>
-                          <br>
+                          
                             <strong>DESPACHO:</strong> {f.despacho || "—"}
-                          </br>
+                          
                         </div>
                       </td>
                     ))}
