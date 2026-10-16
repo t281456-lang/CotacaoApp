@@ -50,13 +50,13 @@ export default function CotacaoApp() {
   ]);
 
   // Estado dos Aprovadores (Baseado na planilha original)
-  const [aprovadores, setAprovadores] = useState([
-    { nome: 'EVANDRO', cargo: 'Solicitante / Infra', aprovado: true },
-    { nome: 'LUIS GUSTAVO', cargo: 'Gerência Operacional', aprovado: true },
-    { nome: 'EDERVAL', cargo: 'Diretoria Financeira', aprovado: false },
-    { nome: 'EMERSON', cargo: 'Gerência Administrativa', aprovado: true },
-    { nome: 'RAFAEL', cargo: 'Supervisão de Compras', aprovado: true },
-    { nome: 'DEP. DE COMPRAS', cargo: 'Setor de Suprimentos', aprovado: true }
+  const [aprovadores] = useState([
+    { nome: 'EVANDRO', cargo: 'Solicitante / Infra'},
+    { nome: 'LUIS GUSTAVO', cargo: 'Gerência Operacional'},
+    { nome: 'EDERVAL', cargo: 'Diretoria Financeira'},
+    { nome: 'EMERSON', cargo: 'Gerência Administrativa'},
+    { nome: 'RAFAEL', cargo: 'Supervisão de Compras'},
+    { nome: 'DEP. DE COMPRAS', cargo: 'Setor de Suprimentos'}
   ]);
 
   const [zoom, setZoom] = useState(100);
