@@ -1,3 +1,3 @@
-import App from '../comunica_o_interna_grn';
+import App from '../CotacaoApp.jsx';
 
 export default App;
